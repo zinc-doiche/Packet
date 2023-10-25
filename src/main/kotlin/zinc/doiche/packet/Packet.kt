@@ -23,6 +23,11 @@ class Packet: JavaPlugin() {
                     packet(player)
                 }
             }
+            register("anvil") {
+                executes {
+                    Anvil(player).open()
+                }
+            }
         }
     }
 
